@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Krishna Janmashtami | Welcome to Vrindavan</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Serif:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+    <!-- =================================
+         KRISHNA FLUTE AUDIO
+         ================================= -->
+
+    <audio id="fluteMusic"
+           loop
+           preload="auto">
+
+        <source src="audio/flute.mp3"
+                type="audio/mpeg">
+
+        Your browser does not support audio.
+    </audio>
+
+
+    <!-- =================================
+         MUSIC BUTTON
+         ================================= -->
+
+    <button id="musicButton"
+            class="music-button"
+            type="button">
+
+        🎵 Play Flute
+
+    </button>
+
+
+    <!-- =================================
+         HERO / HOME
+         ================================= -->
+
+    <section id="home"
+             class="hero">
+
+        <!-- Vrindavan Background -->
+        <div class="vrindavan-bg"></div>
+
+        <!-- Dark Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Stars -->
+        <div class="stars"></div>
+
+        <!-- Moon -->
+        <div class="moon"></div>
+
+        <!-- Fireflies -->
+        <div class="fireflies"></div>
+
+
+        <!-- Krishna & Radha -->
+        <div class="krishna-radha">
+
+            <img src="images/krishna-radha.png"
+                 alt="Krishna and Radha">
+
+        </div>
+
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+
+            <div class="om">
+                ॐ श्री कृष्णाय नमः
+            </div>
+
+            <h1>
+                Welcome to Vrindavan
+            </h1>
+
+            <h2>
+                श्री कृष्ण जन्माष्टमी
+            </h2>
+
+            <p>
+                Happy Krishna Janmashtami 🦚
+                <br>
+                May the divine flute of Krishna
+                fill your heart with peace,
+                love and wisdom.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <button id="enterVrindavan"
+                        class="btn btn-primary"
+                        type="button">
+
+                    🪈 Enter Vrindavan
+
+                </button>
+
+
+                <button id="exploreStory"
+                        class="btn"
+                        type="button">
+
+                    📖 Explore Krishna's Story
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         INTRODUCTION
+         ================================= -->
+
+    <section id="intro"
+             class="intro">
+
+        <h2>
+            The Divine Presence
+        </h2>
+
+        <p>
+            On the sacred occasion of Krishna Janmashtami,
+            we remember Lord Krishna — the divine guide,
+            the playful child of Gokul, the beloved of Radha,
+            and the teacher of the Bhagavad Gita.
+        </p>
+
+    </section>
+
+
+    <!-- =================================
+         KRISHNA'S STORY
+         ================================= -->
+
+    <section id="story"
+             class="story">
+
+        <h2 class="section-title">
+            The Journey of Krishna
+        </h2>
+
+
+        <div class="story-grid">
+
+            <!-- Birth -->
+
+            <div class="story-card">
+
+                <div style="font-size:45px;">
+                    🪷
+                </div>
+
+                <h3>
+                    Birth of Krishna
+                </h3>
+
+                <p>
+                    The divine birth of Krishna
+                    brought hope and light to
+                    a world facing darkness.
+                </p>
+
+                <button class="listen-button"
+                        data-story="birth"
+                        type="button">
+
+                    🔊 Listen
+
+                </button>
+
+            </div>
+
+
+            <!-- Gokul -->
+
+            <div class="story-card">
+
+                <div style="font-size:45px;">
+                    🦚
+                </div>
+
+                <h3>
+                    Krishna in Gokul
+                </h3>
+
+                <p>
+                    Krishna's childhood in Gokul
+                    was filled with joy, friendship,
+                    music and divine playfulness.
+                </p>
+
+                <button class="listen-button"
+                        data-story="gokul"
+                        type="button">
+
+                    🔊 Listen
+
+                </button>
+
+            </div>
+
+
+            <!-- Radha -->
+
+            <div class="story-card">
+
+                <div style="font-size:45px;">
+                    💮
+                </div>
+
+                <h3>
+                    Krishna & Radha
+                </h3>
+
+                <p>
+                    Their story represents
+                    devotion, spiritual connection
+                    and unconditional love.
+                </p>
+
+                <button class="listen-button"
+                        data-story="radha"
+                        type="button">
+
+                    🔊 Listen
+
+                </button>
+
+            </div>
+
+
+            <!-- Gita -->
+
+            <div class="story-card">
+
+                <div style="font-size:45px;">
+                    📖
+                </div>
+
+                <h3>
+                    Bhagavad Gita
+                </h3>
+
+                <p>
+                    Krishna's teachings remind us
+                    to perform our duty with wisdom
+                    and without selfish attachment.
+                </p>
+
+                <button class="listen-button"
+                        data-story="gita"
+                        type="button">
+
+                    🔊 Listen
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         FLUTE SECTION
+         ================================= -->
+
+    <section class="flute-section">
+
+        <h2>
+            Hear the Divine Flute
+        </h2>
+
+        <p>
+            Let the peaceful sound of the flute
+            take you into the atmosphere of Vrindavan.
+        </p>
+
+
+        <button id="bigMusicButton"
+                type="button">
+
+            🪈 Play Krishna's Flute
+
+        </button>
+
+    </section>
+
+
+    <!-- =================================
+         GITA TEACHINGS
+         ================================= -->
+
+    <section class="gita">
+
+        <h2 class="section-title">
+            Wisdom of Krishna
+        </h2>
+
+
+        <div class="gita-grid">
+
+            <div class="gita-card">
+
+                <h3>
+                    Do Your Duty
+                </h3>
+
+                <p>
+                    Focus on doing what is right
+                    and meaningful rather than
+                    worrying constantly about the result.
+                </p>
+
+            </div>
+
+
+            <div class="gita-card">
+
+                <h3>
+                    Stay Balanced
+                </h3>
+
+                <p>
+                    Success and failure are both
+                    parts of life. Keep your mind
+                    calm through both.
+                </p>
+
+            </div>
+
+
+            <div class="gita-card">
+
+                <h3>
+                    Choose Compassion
+                </h3>
+
+                <p>
+                    True wisdom is reflected in
+                    kindness, understanding
+                    and compassion toward others.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         BE HUMAN FIRST
+         ================================= -->
+
+    <section id="humanity"
+             class="humanity">
+
+        <h2>
+            Be Human First
+        </h2>
+
+        <p>
+            Before being divided by caste,
+            language, wealth, status or differences,
+            let us remember that we are human beings.
+
+            <br><br>
+
+            Krishna's wisdom teaches us to see
+            beyond selfishness and hatred.
+
+            <br><br>
+
+            <strong>
+                Humanity is our greatest dharma.
+            </strong>
+        </p>
+
+    </section>
+
+
+    <!-- =================================
+         MESSAGE
+         ================================= -->
+
+    <section class="message">
+
+        <h2>
+            May Krishna's Wisdom Light Your Path
+        </h2>
+
+        <p>
+            May your heart be filled with peace,
+            your mind with wisdom,
+            and your actions with kindness.
+
+            <br><br>
+
+            May we choose humanity,
+            compassion and truth.
+        </p>
+
+    </section>
+
+
+    <!-- =================================
+         FINAL SECTION
+         ================================= -->
+
+    <section class="final">
+
+        <div>
+
+            <h2>
+                Radhe Radhe
+            </h2>
+
+            <p>
+                🦚 Hare Krishna 🦚
+            </p>
+
+            <p>
+                Happy Krishna Janmashtami 🙏
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         FOOTER
+         ================================= -->
+
+    <footer>
+
+        Made with devotion for
+        Krishna Janmashtami 🪷
+
+    </footer>
+
+
+    <!-- =================================
+         STORY POPUP
+         ================================= -->
+
+    <div id="storyPopup"
+         class="story-popup">
+
+        <div class="popup-content">
+
+            <button id="closePopup"
+                    class="close-popup"
+                    type="button">
+
+                ×
+
+            </button>
+
+
+            <h2 id="popupTitle">
+                Krishna's Story
+            </h2>
+
+
+            <p id="popupText">
+                Krishna's story will appear here.
+            </p>
+
+
+            <button id="popupListen"
+                    type="button">
+
+                🔊 Listen
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         JAVASCRIPT
+         ================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
